@@ -38,6 +38,24 @@ export const IMAGES = {
   quoteFestival:
     "https://storage.googleapis.com/banani-generated-images/generated-images/d5d805d1-b2bb-4825-a750-0377c41c07e4.jpg",
 
+  // Accommodation page
+  accomHero:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/96988a4d-6184-49fc-91d6-cfb13a1cca82.jpg",
+  accomBamileke:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/4117afd4-1122-4a57-b205-f604c11bb295.jpg",
+  accomTikar:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/33ab6a2a-84bd-4146-937b-9cc3f7ff0ed0.jpg",
+  accomForestLodge:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/2703189e-af4f-4539-b058-d75ede1a2edd.jpg",
+  accomRiverLodge:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/b37ca538-7465-4efc-bbd6-99c6674e5f19.jpg",
+  accomSultanSuite:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/5c55214c-720d-4198-9be5-84eab01484bd.jpg",
+  accomFonSuite:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/cb1f1f3d-5097-4710-a576-944892fef548.jpg",
+  accomBookCta:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/455dd745-9a64-4001-a862-33f19caf2780.jpg",
+
   // About page
   aboutHero:
     "https://storage.googleapis.com/banani-generated-images/generated-images/372aee97-b4d2-41d1-b9f4-958e3a117455.jpg",
