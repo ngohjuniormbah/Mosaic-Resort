@@ -48,7 +48,7 @@ export default function SiteFooter() {
           <div className="flex flex-col gap-4">
             <div>
               <div className="font-headings text-xl font-bold tracking-widest text-cream uppercase leading-tight">
-                Cameroon Mosaic
+                Cameroon Empire
               </div>
               <div className="mt-0.5 text-xs tracking-[0.25em] text-gold uppercase">
                 Heritage Resort
@@ -118,7 +118,7 @@ export default function SiteFooter() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail size={13} className="shrink-0" />
-                  <span>info@cameroonmosaic.com</span>
+                  <span>info@cameroonempire.com</span>
                 </div>
               </div>
             </div>
@@ -151,7 +151,7 @@ export default function SiteFooter() {
 
         <div className="flex flex-col items-center justify-between gap-3 pt-6 sm:flex-row">
           <span className="text-xs text-muted-foreground">
-            © 2025 Cameroon Mosaic Heritage Resort. All rights reserved.
+            © 2025 Cameroon Empire Heritage Resort. All rights reserved.
           </span>
           <div className="flex gap-6">
             <a href="#" className="text-xs text-muted-foreground transition-colors hover:text-cream">

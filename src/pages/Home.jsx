@@ -243,7 +243,7 @@ export default function Home() {
               A Living Cultural Mosaic, Not Just a Resort.
             </h2>
             <p className="text-base leading-loose text-muted-foreground">
-              Cameroon Mosaic Heritage Resort was born from a deep reverence for Cameroon's
+              Cameroon Empire Heritage Resort was born from a deep reverence for Cameroon's
               extraordinary diversity — 250+ ethnic groups, 10 distinct regions, centuries of
               tradition woven into every village, farm, and festival.
             </p>
@@ -452,7 +452,7 @@ export default function Home() {
             “Where Culture, Nature, Heritage and Community Meet.”
           </blockquote>
           <span className="text-xs tracking-[0.3em] text-gold uppercase">
-            Cameroon Mosaic Heritage Resort
+            Cameroon Empire Heritage Resort
           </span>
           <PatternDivider className="w-64" />
         </div>

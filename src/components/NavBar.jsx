@@ -18,7 +18,7 @@ export default function NavBar() {
     <nav className="absolute top-0 left-0 z-10 flex w-full items-center justify-between px-6 py-5 md:px-16">
       <Link to="/" className="flex flex-col">
         <span className="font-headings text-xl font-bold tracking-widest text-cream uppercase leading-tight">
-          Cameroon Mosaic
+          Cameroon Empire
         </span>
         <span className="text-xs tracking-[0.25em] text-gold uppercase">Heritage Resort</span>
       </Link>
