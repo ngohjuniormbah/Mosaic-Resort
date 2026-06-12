@@ -105,7 +105,7 @@ const TEAM = [
   },
   {
     avatar: "/DEVELOPER.jpg",
-    name: "Modest N",
+    name: "iamadeveloper",
     role: "Lead Developer",
     bio: "Built and architected the digital platform for Cameroon Empire Heritage Resort — from design system to full-stack implementation and deployment.",
   },

@@ -194,3 +194,29 @@ export const IMAGES = {
   shopArtisanCta:
     "https://storage.googleapis.com/banani-generated-images/generated-images/48b9a612-2d52-4886-b004-961503bdfda6.jpg",
 };
+
+// Home hero slideshow — traditional celebration and festival imagery.
+// Replace any src with a real photo (e.g. "/hero1.jpg" uploaded to /public) to
+// swap a slide without touching the components.
+export const HERO_SLIDES = [
+  {
+    src: IMAGES.cultureDance,
+    alt: "Masked dancers in colourful traditional regalia performing at a North West festival",
+  },
+  {
+    src: IMAGES.heroToghu,
+    alt: "Toghu — the embroidered traditional regalia of Bamenda, North West Cameroon",
+  },
+  {
+    src: IMAGES.quoteFestival,
+    alt: "Dancers in traditional dress celebrating at a Grassfields cultural festival",
+  },
+  {
+    src: IMAGES.cultureFestival,
+    alt: "Crowds celebrating at the Ngondo cultural festival",
+  },
+  {
+    src: IMAGES.shopToghuAttire,
+    alt: "A Fon in royal toghu regalia during a traditional ceremony",
+  },
+];
