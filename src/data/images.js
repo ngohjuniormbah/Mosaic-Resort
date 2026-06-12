@@ -122,4 +122,22 @@ export const IMAGES = {
   avatar2: "https://storage.googleapis.com/banani-avatars/avatar/male/18-25/African/2",
   avatar3: "https://storage.googleapis.com/banani-avatars/avatar/female/25-35/African/3",
   avatar4: "https://storage.googleapis.com/banani-avatars/avatar/male/35-50/African/4",
+
+  // Accommodation page
+  accomHero:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/96988a4d-e6c2-4f3a-8d5b-1a2b3c4d5e6f.jpg",
+  accomBamileke:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/5e50d46f-03ba-46f8-8d0e-e7b664d4fde0.jpg",
+  accomTikar:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/5b142bac-37c6-4de1-92b7-7a428aa78e37.jpg",
+  accomForest:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/c29ce05c-2bad-4e1f-9d7f-e14aa55bd8d8.jpg",
+  accomRiver:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7.jpg",
+  accomSultan:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6.jpg",
+  accomFon:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/f1e2d3c4-b5a6-4978-8765-4321fedcba98.jpg",
+  accomCta:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/455dd745-a1b2-4c3d-8e9f-0a1b2c3d4e5f.jpg",
 };
