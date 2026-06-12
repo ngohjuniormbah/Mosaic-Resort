@@ -16,6 +16,7 @@ import {
   ArrowRight,
   Mail,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar.jsx";
 import SiteFooter from "../components/SiteFooter.jsx";
 import PatternDivider from "../components/PatternDivider.jsx";
@@ -630,7 +631,7 @@ export default function Explore() {
         />
         <NavBar />
         <div
-          className="absolute inset-0 flex flex-col items-center justify-center text-center px-16"
+          className="absolute inset-0 flex flex-col items-center justify-center text-center px-6 md:px-16"
           style={{ top: 60 }}
         >
           <div className="flex items-center gap-3 mb-5">
@@ -654,23 +655,27 @@ export default function Explore() {
             mosaic of cultures, traditions, cuisines, landscapes, and
             unforgettable experiences.
           </p>
-          <div className="flex items-center gap-4 mt-9">
-            <button className="bg-gold text-dark-panel font-body text-sm font-medium px-8 py-3.5 rounded-sm tracking-wide">
+          <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
+            <a
+              href="#regions"
+              className="bg-gold text-dark-panel font-body text-sm font-medium px-8 py-3.5 rounded-sm tracking-wide transition-opacity hover:opacity-90"
+            >
               Start Exploring
-            </button>
-            <button
-              className="font-body text-sm font-medium text-cream px-8 py-3.5 rounded-sm tracking-wide"
+            </a>
+            <Link
+              to="/experiences"
+              className="font-body text-sm font-medium text-cream px-8 py-3.5 rounded-sm tracking-wide transition-colors hover:border-cream"
               style={{ border: "1px solid rgba(245,240,232,0.4)" }}
             >
               Discover Cultural Experiences
-            </button>
+            </Link>
           </div>
         </div>
       </section>
 
       {/* ── Why Explore Cameroon ── */}
-      <section className="w-full px-16 py-20">
-        <div className="grid grid-cols-2 gap-20 items-center max-w-6xl mx-auto">
+      <section className="w-full px-6 py-20 md:px-16">
+        <div className="grid grid-cols-1 gap-10 items-center max-w-6xl mx-auto lg:grid-cols-2 lg:gap-20">
           {/* Image column */}
           <div className="relative">
             <div className="rounded-sm overflow-hidden" style={{ height: 480 }}>
@@ -724,7 +729,7 @@ export default function Explore() {
               discovered.
             </p>
             <PatternDivider color="#c4532a" />
-            <div className="grid grid-cols-2 gap-3 mt-1">
+            <div className="grid grid-cols-1 gap-3 mt-1 sm:grid-cols-2">
               {WHY_HIGHLIGHTS.map(({ Icon, label }) => (
                 <div
                   key={label}
@@ -742,7 +747,8 @@ export default function Explore() {
 
       {/* ── 10 Regions ── */}
       <section
-        className="w-full px-16 py-20 bg-muted"
+        id="regions"
+        className="w-full px-6 py-20 bg-muted md:px-16"
         style={{ borderTop: "1px solid #3a2e1e", borderBottom: "1px solid #3a2e1e" }}
       >
         <div className="max-w-6xl mx-auto flex flex-col gap-12">
@@ -755,7 +761,7 @@ export default function Explore() {
               Begin your journey below.
             </p>
           </div>
-          <div className="grid grid-cols-5 gap-4">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
             {REGIONS.map((r) => (
               <RegionCard key={r.num} region={r} />
             ))}
@@ -764,14 +770,14 @@ export default function Explore() {
       </section>
 
       {/* ── Discover Routes ── */}
-      <section className="w-full px-16 py-20">
+      <section className="w-full px-6 py-20 md:px-16">
         <div className="max-w-6xl mx-auto flex flex-col gap-12">
           <div className="flex flex-col gap-3">
             <PatternDivider className="max-w-xs" />
             <SectionLabel>Curated Journeys</SectionLabel>
             <SectionHeading>Discover Cameroon Routes</SectionHeading>
           </div>
-          <div className="grid grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
             {ROUTES.map((r) => (
               <RouteCard key={r.label} route={r} />
             ))}
@@ -781,7 +787,7 @@ export default function Explore() {
 
       {/* ── Culture ── */}
       <section
-        className="w-full px-16 py-20 bg-muted"
+        className="w-full px-6 py-20 bg-muted md:px-16"
         style={{ borderTop: "1px solid #3a2e1e", borderBottom: "1px solid #3a2e1e" }}
       >
         <div className="max-w-6xl mx-auto flex flex-col gap-12">
@@ -790,7 +796,7 @@ export default function Explore() {
             <SectionLabel>Living Culture</SectionLabel>
             <SectionHeading>Experience Cameroonian Culture</SectionHeading>
           </div>
-          <div className="grid grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {CULTURE_ITEMS.map((item) => (
               <CultureCard key={item.title} item={item} />
             ))}
@@ -799,7 +805,7 @@ export default function Explore() {
       </section>
 
       {/* ── Must-Visit Destinations ── */}
-      <section className="w-full px-16 py-20">
+      <section className="w-full px-6 py-20 md:px-16">
         <div className="max-w-6xl mx-auto flex flex-col gap-12">
           <div className="flex items-end justify-between">
             <div className="flex flex-col gap-3">
@@ -815,12 +821,12 @@ export default function Explore() {
               <ArrowRight size={14} />
             </a>
           </div>
-          <div className="grid grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {DESTINATIONS.slice(0, 3).map((d) => (
               <DestinationCard key={d.name} dest={d} />
             ))}
           </div>
-          <div className="grid grid-cols-3 gap-5">
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-3">
             {DESTINATIONS.slice(3).map((d) => (
               <DestinationCard key={d.name} dest={d} />
             ))}
@@ -830,7 +836,7 @@ export default function Explore() {
 
       {/* ── Taste the Flavors ── */}
       <section
-        className="w-full px-16 py-20 bg-muted"
+        className="w-full px-6 py-20 bg-muted md:px-16"
         style={{ borderTop: "1px solid #3a2e1e", borderBottom: "1px solid #3a2e1e" }}
       >
         <div className="max-w-6xl mx-auto flex flex-col gap-12">
@@ -843,7 +849,7 @@ export default function Explore() {
               Douala — every region has a story on its plate.
             </p>
           </div>
-          <div className="grid grid-cols-4 gap-5">
+          <div className="grid grid-cols-1 gap-5 sm:grid-cols-2 lg:grid-cols-4">
             {DISHES.map((d) => (
               <DishCard key={d.name} dish={d} />
             ))}
@@ -871,7 +877,7 @@ export default function Explore() {
               "repeating-linear-gradient(0deg,#c8922a 0px,#c8922a 1px,transparent 1px,transparent 28px), repeating-linear-gradient(90deg,#c8922a 0px,#c8922a 1px,transparent 1px,transparent 28px)",
           }}
         />
-        <div className="relative max-w-6xl mx-auto grid grid-cols-2 gap-16 items-center px-16">
+        <div className="relative max-w-6xl mx-auto grid grid-cols-1 gap-10 items-center px-6 md:px-16 lg:grid-cols-2 lg:gap-16">
           <div className="flex flex-col gap-6">
             <PatternDivider />
             <SectionLabel>Your Gateway</SectionLabel>
@@ -919,7 +925,7 @@ export default function Explore() {
 
       {/* ── CTA Band ── */}
       <section
-        className="w-full bg-dark-panel px-16 py-14"
+        className="w-full bg-dark-panel px-6 py-14 md:px-16"
         style={{ borderTop: "1px solid #3a2e1e" }}
       >
         <div className="max-w-6xl mx-auto flex items-center justify-between">
@@ -935,18 +941,22 @@ export default function Explore() {
               Culture, heritage, nature, and unforgettable experiences await.
             </p>
           </div>
-          <div className="flex gap-4">
-            <button className="flex items-center gap-2 bg-gold text-dark-panel font-body text-sm font-medium px-7 py-3 rounded-sm tracking-wide">
+          <div className="flex flex-wrap gap-4">
+            <Link
+              to="/accommodation"
+              className="flex items-center gap-2 bg-gold text-dark-panel font-body text-sm font-medium px-7 py-3 rounded-sm tracking-wide transition-opacity hover:opacity-90"
+            >
               <Calendar size={15} />
               Book Your Stay
-            </button>
-            <button
-              className="flex items-center gap-2 font-body text-sm font-medium text-cream px-7 py-3 rounded-sm tracking-wide"
+            </Link>
+            <Link
+              to="/contact"
+              className="flex items-center gap-2 font-body text-sm font-medium text-cream px-7 py-3 rounded-sm tracking-wide transition-colors hover:text-gold"
               style={{ border: "1px solid #3a2e1e" }}
             >
               <Mail size={15} />
               Contact Us
-            </button>
+            </Link>
           </div>
         </div>
       </section>

@@ -226,13 +226,13 @@ function AccommodationCard({ room, accent }) {
             </span>
             <span className="ml-1 text-xs text-muted-foreground">/ night</span>
           </div>
-          <button
-            type="button"
+          <a
+            href="#enquiry"
             className="rounded-sm px-5 py-2 text-xs font-medium tracking-wide transition-opacity hover:opacity-80"
             style={{ background: `${accent}22`, border: `1px solid ${accent}66`, color: accent }}
           >
             Enquire Now
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -288,18 +288,18 @@ export default function Accommodation() {
             culture — designed with traditional craft, surrounded by nature, and delivered with luxury hospitality.
           </p>
           <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
-            <button
-              type="button"
+            <a
+              href="#enquiry"
               className="rounded-sm bg-gold px-8 py-3.5 text-sm font-medium tracking-wide text-dark-panel transition-opacity hover:opacity-90"
             >
               Book a Stay
-            </button>
-            <button
-              type="button"
+            </a>
+            <a
+              href="#rooms"
               className="rounded-sm border border-cream/40 px-8 py-3.5 text-sm font-medium tracking-wide text-cream transition-colors hover:border-cream"
             >
               View Availability
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -350,6 +350,7 @@ export default function Accommodation() {
       </section>
 
       {/* Room sections */}
+      <div id="rooms" />
       {visibleSections.map((section) => (
         <section
           key={section.key}
@@ -406,7 +407,7 @@ export default function Accommodation() {
       </section>
 
       {/* Booking CTA + quick enquiry */}
-      <section className="relative w-full overflow-hidden py-20">
+      <section id="enquiry" className="relative w-full overflow-hidden py-20">
         <img
           src={IMAGES.accomCta}
           alt="Resort pool at sunset"
@@ -431,20 +432,22 @@ export default function Accommodation() {
               Cameroon Empire Heritage Resort.
             </p>
             <div className="mt-2 flex flex-wrap gap-4">
-              <button
-                type="button"
+              <a
+                href="mailto:info@cameroonempire.com?subject=Booking%20Enquiry"
                 className="flex items-center gap-2 rounded-sm bg-gold px-7 py-3 text-sm font-medium tracking-wide text-dark-panel transition-opacity hover:opacity-90"
               >
                 <Calendar size={15} />
                 Send Booking Enquiry
-              </button>
-              <button
-                type="button"
+              </a>
+              <a
+                href="https://wa.me/237600000000"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 rounded-sm border border-gold px-7 py-3 text-sm font-medium tracking-wide text-cream transition-colors hover:bg-gold/10"
               >
                 <MessageCircle size={15} />
                 WhatsApp Us
-              </button>
+              </a>
             </div>
           </div>
 

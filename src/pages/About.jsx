@@ -12,6 +12,7 @@ import {
   Lightbulb,
   HeartHandshake,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar.jsx";
 import SiteFooter from "../components/SiteFooter.jsx";
 import PatternDivider from "../components/PatternDivider.jsx";
@@ -419,12 +420,18 @@ export default function About() {
             to create unforgettable memories.
           </p>
           <div className="mt-2 flex flex-wrap items-center justify-center gap-4">
-            <button className="rounded-sm bg-gold px-8 py-3.5 text-sm font-medium tracking-wide text-dark-panel transition-opacity hover:opacity-90">
+            <Link
+              to="/experiences"
+              className="rounded-sm bg-gold px-8 py-3.5 text-sm font-medium tracking-wide text-dark-panel transition-opacity hover:opacity-90"
+            >
               Explore Experiences
-            </button>
-            <button className="rounded-sm border border-cream/40 px-8 py-3.5 text-sm font-medium tracking-wide text-cream transition-colors hover:border-cream">
+            </Link>
+            <Link
+              to="/contact"
+              className="rounded-sm border border-cream/40 px-8 py-3.5 text-sm font-medium tracking-wide text-cream transition-colors hover:border-cream"
+            >
               Contact Us
-            </button>
+            </Link>
           </div>
           <PatternDivider className="mt-2 w-48" />
         </div>

@@ -311,14 +311,16 @@ function ProductCard({ product }) {
           <span className="font-headings text-base font-bold" style={{ color }}>
             {price}
           </span>
-          <button
-            type="button"
+          <a
+            href={`https://wa.me/237600000000?text=${encodeURIComponent(`Hello! I would like to order: ${name} (${price})`)}`}
+            target="_blank"
+            rel="noopener noreferrer"
             className="flex items-center gap-1.5 rounded-sm px-3 py-1.5 text-xs font-medium tracking-wide transition-opacity hover:opacity-80"
             style={{ background: `${color}22`, border: `1px solid ${color}55`, color }}
           >
             <MessageCircle size={11} />
             Order
-          </button>
+          </a>
         </div>
       </div>
     </div>
@@ -389,19 +391,21 @@ export default function Shop() {
             cultural souvenirs — all sourced directly from local artisans and farmers.
           </p>
           <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
-            <button
-              type="button"
+            <a
+              href="#categories"
               className="rounded-sm bg-gold px-8 py-3.5 text-sm font-medium tracking-wide text-dark-panel transition-opacity hover:opacity-90"
             >
               Browse All Products
-            </button>
-            <button
-              type="button"
+            </a>
+            <a
+              href="https://wa.me/237600000000"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 rounded-sm border border-cream/40 px-8 py-3.5 text-sm font-medium tracking-wide text-cream transition-colors hover:border-cream"
             >
               <MessageCircle size={14} />
               Order via WhatsApp
-            </button>
+            </a>
           </div>
         </div>
       </section>
@@ -439,7 +443,7 @@ export default function Shop() {
       </section>
 
       {/* Category tiles */}
-      <section className="w-full border-b border-border bg-muted px-6 py-12 md:px-16">
+      <section id="categories" className="w-full border-b border-border bg-muted px-6 py-12 md:px-16">
         <div className="mx-auto grid max-w-6xl grid-cols-1 gap-4 sm:grid-cols-2 lg:grid-cols-5">
           {CATEGORY_TILES.map(({ label, count, Icon, color, image }) => (
             <a
@@ -554,20 +558,22 @@ export default function Shop() {
               farmers, and craftspeople. Your order is an act of cultural preservation.
             </p>
             <div className="mt-1 flex flex-wrap gap-4">
-              <button
-                type="button"
+              <a
+                href="https://wa.me/237600000000"
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center gap-2 rounded-sm bg-gold px-7 py-3 text-sm font-medium tracking-wide text-dark-panel transition-opacity hover:opacity-90"
               >
                 <MessageCircle size={15} />
                 Order via WhatsApp
-              </button>
-              <button
-                type="button"
+              </a>
+              <a
+                href="mailto:info@cameroonempire.com?subject=Heritage%20Shop%20Enquiry"
                 className="flex items-center gap-2 rounded-sm border border-gold px-7 py-3 text-sm font-medium tracking-wide text-cream transition-colors hover:bg-gold/10"
               >
                 <Mail size={15} />
                 Send an Email Enquiry
-              </button>
+              </a>
             </div>
           </div>
           <div className="flex shrink-0 flex-col gap-4">
