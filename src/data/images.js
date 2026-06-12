@@ -121,11 +121,12 @@ export const IMAGES = {
     "https://storage.googleapis.com/banani-generated-images/generated-images/b38ffcf4-8edc-4b27-a67e-bb27717d7148.jpg",
   aboutCta:
     "https://storage.googleapis.com/banani-generated-images/generated-images/e8b770ad-a5d3-4cc9-a1c1-14a87d376935.jpg",
-  avatar0: "https://storage.googleapis.com/banani-avatars/avatar/male/25-35/African/0",
-  avatar1: "https://storage.googleapis.com/banani-avatars/avatar/female/25-35/African/1",
-  avatar2: "https://storage.googleapis.com/banani-avatars/avatar/male/18-25/African/2",
-  avatar3: "https://storage.googleapis.com/banani-avatars/avatar/female/25-35/African/3",
-  avatar4: "https://storage.googleapis.com/banani-avatars/avatar/male/35-50/African/4",
+  // Team photos — served from /public (local assets)
+  avatar0: "/leader.jpeg",
+  avatar1: "/DEVELOPER.jpg",
+  avatar2: "/leadUIUX.jpeg",
+  avatar3: "/member3.jpeg",
+  avatar4: "/member4.jpeg",
 
   // Accommodation page
   accomHero:
