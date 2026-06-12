@@ -12,6 +12,7 @@ import {
   Lightbulb,
   HeartHandshake,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar.jsx";
 import SiteFooter from "../components/SiteFooter.jsx";
 import PatternDivider from "../components/PatternDivider.jsx";
@@ -198,7 +199,7 @@ export default function About() {
             <div className="h-px w-10 bg-gold" />
           </div>
           <h1 className="max-w-3xl font-headings text-4xl italic leading-tight text-cream">
-            About Cameroon Mosaic Heritage Resort
+            About Cameroon Empire Heritage Resort
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-sand opacity-85">
             A cultural and eco-tourism destination designed to celebrate, preserve, and showcase the
@@ -237,7 +238,7 @@ export default function About() {
               Born from Cameroon's Identity as “Africa in Miniature”
             </h2>
             <p className="text-base leading-loose text-muted-foreground">
-              Cameroon Mosaic Heritage Resort was conceived by Group 8 as an innovative tourism and
+              Cameroon Empire Heritage Resort was conceived by Group 8 as an innovative tourism and
               cultural preservation project. The concept was developed to create a destination where
               visitors can experience the beauty, traditions, cuisine, agriculture, and heritage of
               Cameroon in one location.
@@ -327,7 +328,7 @@ export default function About() {
           <PatternDivider className="w-48" />
           <span className="text-xs tracking-[0.3em] text-gold uppercase">The Opportunity</span>
           <h2 className="font-headings text-3xl italic leading-snug text-cream">
-            Why Cameroon Mosaic Heritage Resort?
+            Why Cameroon Empire Heritage Resort?
           </h2>
           <p className="text-lg leading-loose text-muted-foreground">
             Cameroon possesses extraordinary cultural diversity, natural attractions, and
@@ -335,7 +336,7 @@ export default function About() {
             underrepresented in modern tourism.
           </p>
           <p className="text-base leading-loose text-muted-foreground">
-            Cameroon Mosaic Heritage Resort addresses this challenge by creating a destination where
+            Cameroon Empire Heritage Resort addresses this challenge by creating a destination where
             culture, education, tourism, agriculture, and hospitality work together to promote
             national heritage while generating economic opportunities for local communities.
           </p>
@@ -419,12 +420,18 @@ export default function About() {
             to create unforgettable memories.
           </p>
           <div className="mt-2 flex flex-wrap items-center justify-center gap-4">
-            <button className="rounded-sm bg-gold px-8 py-3.5 text-sm font-medium tracking-wide text-dark-panel transition-opacity hover:opacity-90">
+            <Link
+              to="/experiences"
+              className="rounded-sm bg-gold px-8 py-3.5 text-sm font-medium tracking-wide text-dark-panel transition-opacity hover:opacity-90"
+            >
               Explore Experiences
-            </button>
-            <button className="rounded-sm border border-cream/40 px-8 py-3.5 text-sm font-medium tracking-wide text-cream transition-colors hover:border-cream">
+            </Link>
+            <Link
+              to="/contact"
+              className="rounded-sm border border-cream/40 px-8 py-3.5 text-sm font-medium tracking-wide text-cream transition-colors hover:border-cream"
+            >
               Contact Us
-            </button>
+            </Link>
           </div>
           <PatternDivider className="mt-2 w-48" />
         </div>

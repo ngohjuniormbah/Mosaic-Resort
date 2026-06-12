@@ -13,6 +13,7 @@ import {
   MessageCircle,
   Mail,
 } from "lucide-react";
+import { Link } from "react-router-dom";
 import NavBar from "../components/NavBar.jsx";
 import SiteFooter from "../components/SiteFooter.jsx";
 import PatternDivider from "../components/PatternDivider.jsx";
@@ -140,8 +141,8 @@ export default function Home() {
       {/* ───────────────── Hero ───────────────── */}
       <section className="relative h-[760px] w-full">
         <img
-          src={IMAGES.homeHero}
-          alt="Mount Cameroon volcanic peak at golden hour"
+          src={IMAGES.heroToghu}
+          alt="Toghu — the traditional regalia of Cameroon's North West region"
           className="h-full w-full object-cover"
         />
         <div
@@ -176,15 +177,15 @@ export default function Home() {
             Discover culture, heritage, agriculture, hospitality and adventure in one destination.
           </p>
           <div className="mt-10 flex flex-wrap items-center justify-center gap-4">
-            <button className="rounded-sm bg-gold px-8 py-3.5 text-sm font-medium tracking-wide text-dark-panel transition-opacity hover:opacity-90">
+            <Link to="/accommodation" className="rounded-sm bg-gold px-8 py-3.5 text-sm font-medium tracking-wide text-dark-panel transition-opacity hover:opacity-90">
               Book Your Stay
-            </button>
-            <button className="rounded-sm border border-cream/40 px-8 py-3.5 text-sm font-medium tracking-wide text-cream transition-colors hover:border-cream">
+            </Link>
+            <Link to="/experiences" className="rounded-sm border border-cream/40 px-8 py-3.5 text-sm font-medium tracking-wide text-cream transition-colors hover:border-cream">
               Explore Experiences
-            </button>
-            <button className="rounded-sm border border-gold/50 px-8 py-3.5 text-sm font-medium tracking-wide text-gold transition-colors hover:border-gold">
+            </Link>
+            <Link to="/shop" className="rounded-sm border border-gold/50 px-8 py-3.5 text-sm font-medium tracking-wide text-gold transition-colors hover:border-gold">
               Shop Heritage Products
-            </button>
+            </Link>
           </div>
 
           <div className="absolute bottom-8 flex flex-col items-center gap-2 opacity-50">
@@ -243,7 +244,7 @@ export default function Home() {
               A Living Cultural Mosaic, Not Just a Resort.
             </h2>
             <p className="text-base leading-loose text-muted-foreground">
-              Cameroon Mosaic Heritage Resort was born from a deep reverence for Cameroon's
+              Cameroon Empire Heritage Resort was born from a deep reverence for Cameroon's
               extraordinary diversity — 250+ ethnic groups, 10 distinct regions, centuries of
               tradition woven into every village, farm, and festival.
             </p>
@@ -261,10 +262,13 @@ export default function Home() {
                 </div>
               ))}
             </div>
-            <button className="mt-2 flex items-center gap-2 self-start text-sm font-medium tracking-widest text-gold uppercase">
+            <Link
+              to="/about"
+              className="mt-2 flex items-center gap-2 self-start text-sm font-medium tracking-widest text-gold uppercase transition-opacity hover:opacity-80"
+            >
               Discover Our Story
               <ArrowRight size={14} />
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -318,9 +322,9 @@ export default function Home() {
             ))}
           </div>
           <div className="flex justify-center">
-            <button className="rounded-sm border border-border px-8 py-3.5 text-sm font-medium tracking-wide text-cream transition-colors hover:border-gold">
+            <Link to="/explore" className="rounded-sm border border-border px-8 py-3.5 text-sm font-medium tracking-wide text-cream transition-colors hover:border-gold">
               View All 10 Regions
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -364,9 +368,9 @@ export default function Home() {
           ))}
         </div>
         <div className="flex justify-center border-t border-border bg-dark-panel py-10">
-          <button className="rounded-sm bg-gold px-10 py-3.5 text-sm font-medium tracking-wide text-dark-panel transition-opacity hover:opacity-90">
+          <Link to="/accommodation" className="rounded-sm bg-gold px-10 py-3.5 text-sm font-medium tracking-wide text-dark-panel transition-opacity hover:opacity-90">
             View All Accommodations
-          </button>
+          </Link>
         </div>
       </section>
 
@@ -398,9 +402,9 @@ export default function Home() {
                   </div>
                 ))}
               </div>
-              <button className="mt-2 self-start rounded-sm bg-terracotta px-8 py-3.5 text-sm font-medium tracking-wide text-cream transition-opacity hover:opacity-90">
+              <Link to="/shop" className="mt-2 self-start rounded-sm bg-terracotta px-8 py-3.5 text-sm font-medium tracking-wide text-cream transition-opacity hover:opacity-90">
                 Browse Heritage Shop
-              </button>
+              </Link>
             </div>
 
             <div className="grid grid-cols-2 gap-3">
@@ -452,7 +456,7 @@ export default function Home() {
             “Where Culture, Nature, Heritage and Community Meet.”
           </blockquote>
           <span className="text-xs tracking-[0.3em] text-gold uppercase">
-            Cameroon Mosaic Heritage Resort
+            Cameroon Empire Heritage Resort
           </span>
           <PatternDivider className="w-64" />
         </div>
@@ -470,18 +474,18 @@ export default function Home() {
             </h2>
           </div>
           <div className="flex flex-wrap gap-4">
-            <button className="flex items-center gap-2 rounded-sm bg-gold px-7 py-3 text-sm font-medium tracking-wide text-dark-panel transition-opacity hover:opacity-90">
+            <Link to="/accommodation" className="flex items-center gap-2 rounded-sm bg-gold px-7 py-3 text-sm font-medium tracking-wide text-dark-panel transition-opacity hover:opacity-90">
               <Calendar size={15} />
               Book a Stay
-            </button>
-            <button className="flex items-center gap-2 rounded-sm border border-gold px-7 py-3 text-sm font-medium tracking-wide text-cream transition-colors hover:bg-gold/10">
+            </Link>
+            <a href="https://wa.me/237650050769" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 rounded-sm border border-gold px-7 py-3 text-sm font-medium tracking-wide text-cream transition-colors hover:bg-gold/10">
               <MessageCircle size={15} />
               WhatsApp Us
-            </button>
-            <button className="flex items-center gap-2 rounded-sm border border-border px-7 py-3 text-sm font-medium tracking-wide text-muted-foreground transition-colors hover:text-cream">
+            </a>
+            <a href="mailto:info@cameroonempire.com" className="flex items-center gap-2 rounded-sm border border-border px-7 py-3 text-sm font-medium tracking-wide text-muted-foreground transition-colors hover:text-cream">
               <Mail size={15} />
               Send Enquiry
-            </button>
+            </a>
           </div>
         </div>
       </section>
