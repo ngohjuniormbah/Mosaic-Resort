@@ -19,7 +19,8 @@ import SiteFooter from "../components/SiteFooter.jsx";
 import PatternDivider from "../components/PatternDivider.jsx";
 import ExperienceCard from "../components/ExperienceCard.jsx";
 import RegionCard from "../components/RegionCard.jsx";
-import { IMAGES } from "../data/images.js";
+import { IMAGES, HERO_SLIDES } from "../data/images.js";
+import HeroSlideshow from "../components/HeroSlideshow.jsx";
 
 const STATS = [
   { value: "10", label: "Regions of Cameroon" },
@@ -140,11 +141,7 @@ export default function Home() {
     <div className="w-full bg-background font-body text-foreground">
       {/* ───────────────── Hero ───────────────── */}
       <section className="relative h-[760px] w-full">
-        <img
-          src={IMAGES.heroToghu}
-          alt="Toghu — the traditional regalia of Cameroon's North West region"
-          className="h-full w-full object-cover"
-        />
+        <HeroSlideshow slides={HERO_SLIDES} />
         <div
           className="absolute inset-0"
           style={{
