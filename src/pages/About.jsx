@@ -99,7 +99,7 @@ const OPPORTUNITY_STATS = [
 const TEAM = [
   {
     avatar: "/leader.jpeg",
-    name: "Team Leader",
+    name: "Nji Onyx",
     role: "Chief Executive Officer",
     bio: "Leads the vision and direction of Cameroon Empire Heritage Resort, driving the mission to celebrate Cameroon's cultural heritage through world-class hospitality.",
   },
@@ -111,7 +111,7 @@ const TEAM = [
   },
   {
     avatar: "/leadUIUX.jpeg",
-    name: "Lead Designer",
+    name: "Neba Eric Suh",
     role: "UI/UX Designer",
     bio: "Crafted the visual identity and user experience of the resort's digital presence, blending Cameroonian aesthetic tradition with modern design principles.",
   },
@@ -135,7 +135,7 @@ const TEAM = [
   },
   {
     avatar: "/MEMBER2.jpeg",
-    name: "Team Member",
+    name: "Nji Veron",
     role: "Project Team Member",
     bio: "An integral part of the Cameroon Empire Heritage Resort team, contributing skills and commitment to bringing this cultural vision to life.",
   },
