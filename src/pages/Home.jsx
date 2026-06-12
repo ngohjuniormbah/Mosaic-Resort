@@ -141,8 +141,8 @@ export default function Home() {
       {/* ───────────────── Hero ───────────────── */}
       <section className="relative h-[760px] w-full">
         <img
-          src={IMAGES.homeHero}
-          alt="Mount Cameroon volcanic peak at golden hour"
+          src={IMAGES.heroToghu}
+          alt="Toghu — the traditional regalia of Cameroon's North West region"
           className="h-full w-full object-cover"
         />
         <div
@@ -478,7 +478,7 @@ export default function Home() {
               <Calendar size={15} />
               Book a Stay
             </Link>
-            <a href="https://wa.me/237600000000" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 rounded-sm border border-gold px-7 py-3 text-sm font-medium tracking-wide text-cream transition-colors hover:bg-gold/10">
+            <a href="https://wa.me/237650050769" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 rounded-sm border border-gold px-7 py-3 text-sm font-medium tracking-wide text-cream transition-colors hover:bg-gold/10">
               <MessageCircle size={15} />
               WhatsApp Us
             </a>

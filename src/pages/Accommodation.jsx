@@ -239,8 +239,40 @@ function AccommodationCard({ room, accent }) {
   );
 }
 
+const WHATSAPP_NUMBER = "237650050769";
+
 export default function Accommodation() {
   const [activeCategory, setActiveCategory] = useState("All");
+  const [enquiry, setEnquiry] = useState({
+    name: "",
+    email: "",
+    phone: "",
+    checkin: "",
+    checkout: "",
+    type: "",
+  });
+
+  const updateEnquiry = (field) => (e) =>
+    setEnquiry((prev) => ({ ...prev, [field]: e.target.value }));
+
+  const handleEnquirySubmit = (e) => {
+    e.preventDefault();
+    const message = [
+      "Hello Cameroon Empire Heritage Resort! I would like to book a stay.",
+      "",
+      `Name: ${enquiry.name}`,
+      `Email: ${enquiry.email}`,
+      `Phone: ${enquiry.phone}`,
+      `Check-in: ${enquiry.checkin}`,
+      `Check-out: ${enquiry.checkout}`,
+      `Accommodation Type: ${enquiry.type}`,
+    ].join("\n");
+    window.open(
+      `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`,
+      "_blank",
+      "noopener,noreferrer"
+    );
+  };
 
   const visibleSections =
     activeCategory === "All" ? SECTIONS : SECTIONS.filter((s) => s.key === activeCategory);
@@ -250,8 +282,8 @@ export default function Accommodation() {
       {/* Hero */}
       <section className="relative h-[580px] w-full">
         <img
-          src={IMAGES.accomHero}
-          alt="Aerial view of the resort grounds at sunset"
+          src={IMAGES.heroToghu}
+          alt="Toghu — the traditional regalia of Cameroon's North West region"
           className="h-full w-full object-cover"
         />
         <div
@@ -440,7 +472,7 @@ export default function Accommodation() {
                 Send Booking Enquiry
               </a>
               <a
-                href="https://wa.me/237600000000"
+                href="https://wa.me/237650050769"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 rounded-sm border border-gold px-7 py-3 text-sm font-medium tracking-wide text-cream transition-colors hover:bg-gold/10"
@@ -453,7 +485,7 @@ export default function Accommodation() {
 
           <form
             className="flex w-full max-w-[340px] shrink-0 flex-col gap-4 rounded-sm border border-border bg-dark-panel p-8"
-            onSubmit={(e) => e.preventDefault()}
+            onSubmit={handleEnquirySubmit}
           >
             <h3 className="font-headings text-lg text-cream" style={{ fontStyle: "italic" }}>
               Quick Enquiry
@@ -464,6 +496,9 @@ export default function Accommodation() {
               id="enquiry-name"
               type="text"
               placeholder="Full Name"
+              required
+              value={enquiry.name}
+              onChange={updateEnquiry("name")}
               className="rounded-sm border border-border bg-input px-3 py-2.5 text-sm text-cream placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-gold"
             />
             <label className="sr-only" htmlFor="enquiry-email">Email Address</label>
@@ -471,6 +506,9 @@ export default function Accommodation() {
               id="enquiry-email"
               type="email"
               placeholder="Email Address"
+              required
+              value={enquiry.email}
+              onChange={updateEnquiry("email")}
               className="rounded-sm border border-border bg-input px-3 py-2.5 text-sm text-cream placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-gold"
             />
             <label className="sr-only" htmlFor="enquiry-phone">Phone Number</label>
@@ -478,6 +516,9 @@ export default function Accommodation() {
               id="enquiry-phone"
               type="tel"
               placeholder="Phone Number"
+              required
+              value={enquiry.phone}
+              onChange={updateEnquiry("phone")}
               className="rounded-sm border border-border bg-input px-3 py-2.5 text-sm text-cream placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-gold"
             />
             <div className="grid grid-cols-2 gap-3">
@@ -485,12 +526,18 @@ export default function Accommodation() {
               <input
                 id="enquiry-checkin"
                 type="date"
+                required
+                value={enquiry.checkin}
+                onChange={updateEnquiry("checkin")}
                 className="rounded-sm border border-border bg-input px-3 py-2.5 text-sm text-muted-foreground focus:outline-none focus:ring-1 focus:ring-gold"
               />
               <label className="sr-only" htmlFor="enquiry-checkout">Check-out</label>
               <input
                 id="enquiry-checkout"
                 type="date"
+                required
+                value={enquiry.checkout}
+                onChange={updateEnquiry("checkout")}
                 className="rounded-sm border border-border bg-input px-3 py-2.5 text-sm text-muted-foreground focus:outline-none focus:ring-1 focus:ring-gold"
               />
             </div>
@@ -498,7 +545,9 @@ export default function Accommodation() {
             <select
               id="enquiry-type"
               className="rounded-sm border border-border bg-input px-3 py-2.5 text-sm text-muted-foreground focus:outline-none focus:ring-1 focus:ring-gold"
-              defaultValue=""
+              required
+              value={enquiry.type}
+              onChange={updateEnquiry("type")}
             >
               <option value="" disabled>
                 Accommodation Type
@@ -511,8 +560,11 @@ export default function Accommodation() {
               type="submit"
               className="mt-1 w-full rounded-sm bg-gold py-3 text-sm font-medium tracking-wide text-dark-panel transition-opacity hover:opacity-90"
             >
-              Submit Enquiry
+              Book via WhatsApp
             </button>
+            <p className="text-center text-xs text-muted-foreground">
+              Your booking details open in WhatsApp — just hit send.
+            </p>
           </form>
         </div>
       </section>

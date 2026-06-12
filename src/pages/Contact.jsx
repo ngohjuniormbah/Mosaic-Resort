@@ -6,7 +6,7 @@ import { IMAGES } from "../data/images";
 
 const CONTACT_DETAILS = [
   { Icon: MapPin, label: "Location", value: "Yaoundé, Cameroon" },
-  { Icon: Phone, label: "Phone", value: "+237 600 000 000", href: "tel:+237600000000" },
+  { Icon: Phone, label: "Phone", value: "+237 650 050 769", href: "tel:+237650050769" },
   {
     Icon: Mail,
     label: "Email",
@@ -16,7 +16,28 @@ const CONTACT_DETAILS = [
   { Icon: Clock, label: "Reception", value: "Open 24 hours, every day" },
 ];
 
+const WHATSAPP_NUMBER = "237650050769";
+
 export default function Contact() {
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const data = new FormData(e.target);
+    const message = [
+      `Hello Cameroon Empire Heritage Resort!`,
+      "",
+      `Name: ${data.get("name")}`,
+      `Email: ${data.get("email")}`,
+      `Subject: ${data.get("subject")}`,
+      "",
+      `${data.get("message")}`,
+    ].join("\n");
+    window.open(
+      `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(message)}`,
+      "_blank",
+      "noopener,noreferrer"
+    );
+  };
+
   return (
     <div className="w-full bg-background font-body text-foreground">
       {/* Hero */}
@@ -81,7 +102,7 @@ export default function Contact() {
               ))}
             </div>
             <a
-              href="https://wa.me/237600000000"
+              href="https://wa.me/237650050769"
               target="_blank"
               rel="noopener noreferrer"
               className="flex w-fit items-center gap-2 rounded-sm bg-gold px-7 py-3 text-sm font-medium tracking-wide text-dark-panel transition-opacity hover:opacity-90"
@@ -93,7 +114,7 @@ export default function Contact() {
 
           <form
             className="flex flex-col gap-4 rounded-sm border border-border bg-dark-panel p-8"
-            onSubmit={(e) => e.preventDefault()}
+            onSubmit={handleSubmit}
           >
             <h3 className="font-headings text-xl text-cream" style={{ fontStyle: "italic" }}>
               Send a Message
@@ -106,8 +127,10 @@ export default function Contact() {
                 </label>
                 <input
                   id="contact-name"
+                  name="name"
                   type="text"
                   placeholder="Your name"
+                  required
                   className="rounded-sm border border-border bg-input px-3 py-2.5 text-sm text-cream placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-gold"
                 />
               </div>
@@ -117,8 +140,10 @@ export default function Contact() {
                 </label>
                 <input
                   id="contact-email"
+                  name="email"
                   type="email"
                   placeholder="your@email.com"
+                  required
                   className="rounded-sm border border-border bg-input px-3 py-2.5 text-sm text-cream placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-gold"
                 />
               </div>
@@ -129,6 +154,7 @@ export default function Contact() {
               </label>
               <input
                 id="contact-subject"
+                name="subject"
                 type="text"
                 placeholder="Booking enquiry, experiences, shop order..."
                 className="rounded-sm border border-border bg-input px-3 py-2.5 text-sm text-cream placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-gold"
@@ -140,6 +166,8 @@ export default function Contact() {
               </label>
               <textarea
                 id="contact-message"
+                name="message"
+                required
                 rows={5}
                 placeholder="How can we help?"
                 className="resize-none rounded-sm border border-border bg-input px-3 py-2.5 text-sm text-cream placeholder:text-muted-foreground focus:outline-none focus:ring-1 focus:ring-gold"
@@ -149,7 +177,7 @@ export default function Contact() {
               type="submit"
               className="mt-1 w-full rounded-sm bg-gold py-3 text-sm font-medium tracking-wide text-dark-panel transition-opacity hover:opacity-90"
             >
-              Send Message
+              Send via WhatsApp
             </button>
           </form>
         </div>

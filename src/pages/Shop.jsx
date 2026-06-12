@@ -312,7 +312,7 @@ function ProductCard({ product }) {
             {price}
           </span>
           <a
-            href={`https://wa.me/237600000000?text=${encodeURIComponent(`Hello! I would like to order: ${name} (${price})`)}`}
+            href={`https://wa.me/237650050769?text=${encodeURIComponent(`Hello! I would like to order: ${name} (${price})`)}`}
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center gap-1.5 rounded-sm px-3 py-1.5 text-xs font-medium tracking-wide transition-opacity hover:opacity-80"
@@ -398,7 +398,7 @@ export default function Shop() {
               Browse All Products
             </a>
             <a
-              href="https://wa.me/237600000000"
+              href="https://wa.me/237650050769"
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center gap-2 rounded-sm border border-cream/40 px-8 py-3.5 text-sm font-medium tracking-wide text-cream transition-colors hover:border-cream"
@@ -559,7 +559,7 @@ export default function Shop() {
             </p>
             <div className="mt-1 flex flex-wrap gap-4">
               <a
-                href="https://wa.me/237600000000"
+                href="https://wa.me/237650050769"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="flex items-center gap-2 rounded-sm bg-gold px-7 py-3 text-sm font-medium tracking-wide text-dark-panel transition-opacity hover:opacity-90"

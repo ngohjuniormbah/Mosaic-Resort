@@ -114,7 +114,7 @@ export default function SiteFooter() {
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone size={13} className="shrink-0" />
-                  <span>+237 600 000 000</span>
+                  <span>+237 650 050 769</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Mail size={13} className="shrink-0" />

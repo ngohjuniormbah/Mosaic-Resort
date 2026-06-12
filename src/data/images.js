@@ -1,6 +1,10 @@
 // Generated imagery from the original design export. Centralised so pages stay readable
 // and the URLs are easy to swap for project-owned assets later.
 export const IMAGES = {
+  // Hero backdrop celebrating North West Cameroon's toghu regalia. Swap this URL for a
+  // photo of a woman in toghu attire once the asset is available.
+  heroToghu:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/82a39b35-1209-486d-af4c-8b00ade1ad47.jpg",
   homeHero:
     "https://storage.googleapis.com/banani-generated-images/generated-images/48a72809-bc13-4191-82a2-3acc891d2a32.jpg",
   storyPortrait:
