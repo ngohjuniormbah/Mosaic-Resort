@@ -140,4 +140,52 @@ export const IMAGES = {
     "https://storage.googleapis.com/banani-generated-images/generated-images/f1e2d3c4-b5a6-4978-8765-4321fedcba98.jpg",
   accomCta:
     "https://storage.googleapis.com/banani-generated-images/generated-images/455dd745-a1b2-4c3d-8e9f-0a1b2c3d4e5f.jpg",
+
+  // Heritage Shop page
+  shopHero:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/c6e31e0c-6da7-4989-a29e-b2ec26fe1676.jpg",
+  shopCatClothing:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/cb843b32-27b6-461d-b060-39a344d7af2f.jpg",
+  shopCatJewelry:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/ee383eed-92aa-44c7-9885-b263cf1d1b8a.jpg",
+  shopCatDecor:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/2420d02f-d2c2-4a64-ada2-5f98b6fcf79b.jpg",
+  shopCatAgri:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/4d6f4f10-815a-4a84-ae40-b26968287709.jpg",
+  shopCatSouvenirs:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/7e1e5a2b-507b-4d25-913d-30a9db1299eb.jpg",
+  shopToghuAttire:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/2b044941-4cc9-4791-8131-5e14f5ea7827.jpg",
+  shopKabaGown:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/dbb52b8c-a069-4164-a483-923e357d19a8.jpg",
+  shopBoubou:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/0db4c815-d806-4a34-a850-e6c8fdb1f473.jpg",
+  shopNdopCloth:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/63b31c7b-4a79-4764-b61d-11bed1ff4319.jpg",
+  shopBeadedNecklace:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/96ed991e-53d8-4863-bce5-fdc33bdb0a1d.jpg",
+  shopBronzeBracelet:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/a3506574-0716-412e-96ba-763269d64c77.jpg",
+  shopBeadedEarrings:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/0c827026-9874-4580-a670-0f6972d3f8e1.jpg",
+  shopCopperPendant:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/9a33cf93-9eaf-4885-9249-e454a415ce07.jpg",
+  shopCeremonialMask:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/3c256f17-d07b-478d-b849-01a07f84a56c.jpg",
+  shopBakaSculpture:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/f9a5e615-4621-4c5b-b6e1-a56e08ed081c.jpg",
+  shopRaffiaBasket:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/1c627a85-854a-4b25-8d56-f867f1d10cc1.jpg",
+  shopNdopCushion:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/f47fe31b-f37b-483a-a3b9-60f130f600fe.jpg",
+  shopArabicaCoffee:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/36b45d2e-ed9a-4f13-9a15-40d6f3235ee4.jpg",
+  shopForestHoney:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/f011fd92-dd34-4aaf-b03e-0a9944120fbc.jpg",
+  shopCocoaNibs:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/b692e70d-2a03-497c-a921-ffaaa4c8c1d2.jpg",
+  shopSpiceBlend:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/cd3fd307-dbf4-417c-9641-ba59f9a2ec74.jpg",
+  shopArtisanCta:
+    "https://storage.googleapis.com/banani-generated-images/generated-images/48b9a612-2d52-4886-b004-961503bdfda6.jpg",
 };
