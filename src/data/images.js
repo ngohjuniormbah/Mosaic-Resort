@@ -125,21 +125,21 @@ export const IMAGES = {
 
   // Accommodation page
   accomHero:
-    "https://storage.googleapis.com/banani-generated-images/generated-images/96988a4d-e6c2-4f3a-8d5b-1a2b3c4d5e6f.jpg",
+    "https://storage.googleapis.com/banani-generated-images/generated-images/96988a4d-6184-49fc-91d6-cfb13a1cca82.jpg",
   accomBamileke:
-    "https://storage.googleapis.com/banani-generated-images/generated-images/5e50d46f-03ba-46f8-8d0e-e7b664d4fde0.jpg",
+    "https://storage.googleapis.com/banani-generated-images/generated-images/4117afd4-1122-4a57-b205-f604c11bb295.jpg",
   accomTikar:
-    "https://storage.googleapis.com/banani-generated-images/generated-images/5b142bac-37c6-4de1-92b7-7a428aa78e37.jpg",
+    "https://storage.googleapis.com/banani-generated-images/generated-images/33ab6a2a-84bd-4146-937b-9cc3f7ff0ed0.jpg",
   accomForest:
-    "https://storage.googleapis.com/banani-generated-images/generated-images/c29ce05c-2bad-4e1f-9d7f-e14aa55bd8d8.jpg",
+    "https://storage.googleapis.com/banani-generated-images/generated-images/2703189e-af4f-4539-b058-d75ede1a2edd.jpg",
   accomRiver:
-    "https://storage.googleapis.com/banani-generated-images/generated-images/b2c3d4e5-f6a7-48b9-c0d1-e2f3a4b5c6d7.jpg",
+    "https://storage.googleapis.com/banani-generated-images/generated-images/b37ca538-7465-4efc-bbd6-99c6674e5f19.jpg",
   accomSultan:
-    "https://storage.googleapis.com/banani-generated-images/generated-images/a1b2c3d4-e5f6-47a8-b9c0-d1e2f3a4b5c6.jpg",
+    "https://storage.googleapis.com/banani-generated-images/generated-images/5c55214c-720d-4198-9be5-84eab01484bd.jpg",
   accomFon:
-    "https://storage.googleapis.com/banani-generated-images/generated-images/f1e2d3c4-b5a6-4978-8765-4321fedcba98.jpg",
+    "https://storage.googleapis.com/banani-generated-images/generated-images/cb1f1f3d-5097-4710-a576-944892fef548.jpg",
   accomCta:
-    "https://storage.googleapis.com/banani-generated-images/generated-images/455dd745-a1b2-4c3d-8e9f-0a1b2c3d4e5f.jpg",
+    "https://storage.googleapis.com/banani-generated-images/generated-images/455dd745-9a64-4001-a862-33f19caf2780.jpg",
 
   // Heritage Shop page
   shopHero:
