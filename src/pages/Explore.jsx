@@ -864,7 +864,7 @@ export default function Explore() {
       >
         <img
           src={IMAGES.exploreGateway}
-          alt="Cameroon Empire Resort aerial"
+          alt="Cameroon Mosaic Heritage Empire Resort aerial"
           className="absolute inset-0 w-full h-full object-cover"
         />
         <div className="absolute inset-0" style={{ background: "rgba(14,12,9,0.8)" }} />
@@ -888,7 +888,7 @@ export default function Explore() {
               Your Gateway to Cameroon
             </h2>
             <p className="font-body text-base text-muted-foreground leading-loose">
-              Cameroon Empire Heritage Resort brings together the cultures, traditions,
+              Cameroon Mosaic Heritage Empire brings together the cultures, traditions,
               cuisines, agriculture, and hospitality of Cameroon into one unforgettable
               destination.
             </p>

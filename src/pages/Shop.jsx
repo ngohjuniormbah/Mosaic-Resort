@@ -568,7 +568,7 @@ export default function Shop() {
                 Order via WhatsApp
               </a>
               <a
-                href="mailto:info@cameroonempire.com?subject=Heritage%20Shop%20Enquiry"
+                href="mailto:info@cameroonmosaicempire.com?subject=Heritage%20Shop%20Enquiry"
                 className="flex items-center gap-2 rounded-sm border border-gold px-7 py-3 text-sm font-medium tracking-wide text-cream transition-colors hover:bg-gold/10"
               >
                 <Mail size={15} />

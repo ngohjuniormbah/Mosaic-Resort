@@ -10,8 +10,8 @@ const CONTACT_DETAILS = [
   {
     Icon: Mail,
     label: "Email",
-    value: "info@cameroonempire.com",
-    href: "mailto:info@cameroonempire.com",
+    value: "info@cameroonmosaicempire.com",
+    href: "mailto:info@cameroonmosaicempire.com",
   },
   { Icon: Clock, label: "Reception", value: "Open 24 hours, every day" },
 ];
@@ -23,7 +23,7 @@ export default function Contact() {
     e.preventDefault();
     const data = new FormData(e.target);
     const message = [
-      `Hello Cameroon Empire Heritage Resort!`,
+      `Hello Cameroon Mosaic Heritage Empire!`,
       "",
       `Name: ${data.get("name")}`,
       `Email: ${data.get("email")}`,
