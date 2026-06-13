@@ -145,6 +145,18 @@ const TEAM = [
     role: "Product Designer",
     bio: "Shapes the product experience at Cameroon Mosaic Heritage Empire — translating user needs and cultural vision into intuitive, beautiful design solutions.",
   },
+  {
+    avatar: "/MEMBER8.jpeg",
+    name: "Vofo Kenfack Dorcas Francesca",
+    role: "Project Team Member",
+    bio: "A dedicated contributor to the creation of Cameroon Mosaic Heritage Empire — bringing commitment and energy to every aspect of the project.",
+  },
+  {
+    avatar: "/MEMBER9.jpeg",
+    name: "Mitcho Blair",
+    role: "Project Team Member",
+    bio: "A dedicated contributor to the founding of Cameroon Mosaic Heritage Empire — helping shape the company's vision from the ground up.",
+  },
 ];
 
 function MissionCard({ Icon, accent, eyebrow, title, description, patternAngle }) {
