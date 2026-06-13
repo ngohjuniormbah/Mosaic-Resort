@@ -241,7 +241,7 @@ export default function Home() {
               A Living Cultural Mosaic, Not Just a Resort.
             </h2>
             <p className="text-base leading-loose text-muted-foreground">
-              Cameroon Empire Heritage Resort was born from a deep reverence for Cameroon's
+              Cameroon Mosaic Heritage Empire was born from a deep reverence for Cameroon's
               extraordinary diversity — 250+ ethnic groups, 10 distinct regions, centuries of
               tradition woven into every village, farm, and festival.
             </p>
@@ -453,7 +453,7 @@ export default function Home() {
             “Where Culture, Nature, Heritage and Community Meet.”
           </blockquote>
           <span className="text-xs tracking-[0.3em] text-gold uppercase">
-            Cameroon Empire Heritage Resort
+            Cameroon Mosaic Heritage Empire
           </span>
           <PatternDivider className="w-64" />
         </div>
@@ -479,7 +479,7 @@ export default function Home() {
               <MessageCircle size={15} />
               WhatsApp Us
             </a>
-            <a href="mailto:info@cameroonempire.com" className="flex items-center gap-2 rounded-sm border border-border px-7 py-3 text-sm font-medium tracking-wide text-muted-foreground transition-colors hover:text-cream">
+            <a href="mailto:info@cameroonmosaicempire.com" className="flex items-center gap-2 rounded-sm border border-border px-7 py-3 text-sm font-medium tracking-wide text-muted-foreground transition-colors hover:text-cream">
               <Mail size={15} />
               Send Enquiry
             </a>

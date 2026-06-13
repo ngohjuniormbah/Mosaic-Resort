@@ -258,7 +258,7 @@ export default function Accommodation() {
   const handleEnquirySubmit = (e) => {
     e.preventDefault();
     const message = [
-      "Hello Cameroon Empire Heritage Resort! I would like to book a stay.",
+      "Hello Cameroon Mosaic Heritage Empire! I would like to book a stay.",
       "",
       `Name: ${enquiry.name}`,
       `Email: ${enquiry.email}`,
@@ -316,7 +316,7 @@ export default function Accommodation() {
             Accommodation
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-sand" style={{ opacity: 0.85 }}>
-            Each room, villa, and suite at Cameroon Empire Heritage Resort is a living expression of Cameroonian
+            Each room, villa, and suite at Cameroon Mosaic Heritage Empire is a living expression of Cameroonian
             culture — designed with traditional craft, surrounded by nature, and delivered with luxury hospitality.
           </p>
           <div className="mt-9 flex flex-wrap items-center justify-center gap-4">
@@ -461,11 +461,11 @@ export default function Accommodation() {
             </h2>
             <p className="max-w-lg text-base leading-loose text-muted-foreground">
               Reach out via WhatsApp or email to check availability, ask questions, and secure your accommodation at
-              Cameroon Empire Heritage Resort.
+              Cameroon Mosaic Heritage Empire.
             </p>
             <div className="mt-2 flex flex-wrap gap-4">
               <a
-                href="mailto:info@cameroonempire.com?subject=Booking%20Enquiry"
+                href="mailto:info@cameroonmosaicempire.com?subject=Booking%20Enquiry"
                 className="flex items-center gap-2 rounded-sm bg-gold px-7 py-3 text-sm font-medium tracking-wide text-dark-panel transition-opacity hover:opacity-90"
               >
                 <Calendar size={15} />

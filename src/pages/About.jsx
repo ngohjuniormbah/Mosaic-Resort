@@ -101,13 +101,13 @@ const TEAM = [
     avatar: "/leader.jpeg",
     name: "Nji Onyx",
     role: "Chief Executive Officer",
-    bio: "Leads the vision and direction of Cameroon Empire Heritage Resort, driving the mission to celebrate Cameroon's cultural heritage through world-class hospitality.",
+    bio: "Leads the vision and direction of Cameroon Mosaic Heritage Empire, driving the mission to celebrate Cameroon's cultural heritage through world-class hospitality.",
   },
   {
     avatar: "/DEVELOPER.jpg",
     name: "iamadeveloper",
     role: "Lead Developer",
-    bio: "Built and architected the digital platform for Cameroon Empire Heritage Resort — from design system to full-stack implementation and deployment.",
+    bio: "Built and architected the digital platform for Cameroon Mosaic Heritage Empire — from design system to full-stack implementation and deployment.",
   },
   {
     avatar: "/leadUIUX.jpeg",
@@ -131,13 +131,19 @@ const TEAM = [
     avatar: "/MEMBER1.jpeg",
     name: "Modest N",
     role: "Project Team Member",
-    bio: "Plays a key role in the development and delivery of the Cameroon Empire Heritage Resort project, bringing dedication and expertise to every milestone.",
+    bio: "Plays a key role in the development and delivery of the Cameroon Mosaic Heritage Empire project, bringing dedication and expertise to every milestone.",
   },
   {
     avatar: "/MEMBER2.jpeg",
     name: "Nji Veron",
     role: "Project Team Member",
-    bio: "An integral part of the Cameroon Empire Heritage Resort team, contributing skills and commitment to bringing this cultural vision to life.",
+    bio: "An integral part of the Cameroon Mosaic Heritage Empire team, contributing skills and commitment to bringing this cultural vision to life.",
+  },
+  {
+    avatar: "/MEMBER7.jpeg",
+    name: "Noela Ngwefor",
+    role: "Product Designer",
+    bio: "Shapes the product experience at Cameroon Mosaic Heritage Empire — translating user needs and cultural vision into intuitive, beautiful design solutions.",
   },
 ];
 
@@ -211,7 +217,7 @@ export default function About() {
             <div className="h-px w-10 bg-gold" />
           </div>
           <h1 className="max-w-3xl font-headings text-4xl italic leading-tight text-cream">
-            About Cameroon Empire Heritage Resort
+            About Cameroon Mosaic Heritage Empire
           </h1>
           <p className="mt-5 max-w-2xl text-lg leading-relaxed text-sand opacity-85">
             A cultural and eco-tourism destination designed to celebrate, preserve, and showcase the
@@ -250,7 +256,7 @@ export default function About() {
               Born from Cameroon's Identity as “Africa in Miniature”
             </h2>
             <p className="text-base leading-loose text-muted-foreground">
-              Cameroon Empire Heritage Resort was conceived by Group 8 as an innovative tourism and
+              Cameroon Mosaic Heritage Empire was conceived by Group 8 as an innovative tourism and
               cultural preservation project. The concept was developed to create a destination where
               visitors can experience the beauty, traditions, cuisine, agriculture, and heritage of
               Cameroon in one location.
@@ -340,7 +346,7 @@ export default function About() {
           <PatternDivider className="w-48" />
           <span className="text-xs tracking-[0.3em] text-gold uppercase">The Opportunity</span>
           <h2 className="font-headings text-3xl italic leading-snug text-cream">
-            Why Cameroon Empire Heritage Resort?
+            Why Cameroon Mosaic Heritage Empire?
           </h2>
           <p className="text-lg leading-loose text-muted-foreground">
             Cameroon possesses extraordinary cultural diversity, natural attractions, and
@@ -348,7 +354,7 @@ export default function About() {
             underrepresented in modern tourism.
           </p>
           <p className="text-base leading-loose text-muted-foreground">
-            Cameroon Empire Heritage Resort addresses this challenge by creating a destination where
+            Cameroon Mosaic Heritage Empire addresses this challenge by creating a destination where
             culture, education, tourism, agriculture, and hospitality work together to promote
             national heritage while generating economic opportunities for local communities.
           </p>
